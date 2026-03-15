@@ -1,1 +1,27 @@
-Txt 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crony Navigation | Nexus</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; background: #05070a; overflow: hidden; font-family: 'Courier New', monospace; }
+        #navigator-stage { height: 100vh; width: 100vw; background: #fff; }
+        #dev-panel { position: fixed; bottom: 10px; left: 10px; z-index: 100; }
+        .nexus-btn { background: #1c5982; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+    </style>
+</head>
+<body onload="new Navigator('epsteinia')">
+
+    <div id="navigator-stage"></div>
+
+    <div id="dev-panel">
+        <button class="nexus-btn" onclick="location.reload()">🔄 RELOAD NEXUS</button>
+    </div>
+
+    <script src="engine.js"></script>
+    <script src="epsteinia_manifest.js"></script>
+
+</body>
+</html>
